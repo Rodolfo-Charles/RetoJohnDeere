@@ -3,10 +3,10 @@
 ## Reto John Deere
 
 Equipo 6:
-Fernando Bustos Monsiváis - A00829931
-Rodolfo Charles Wah - A01383393
-Lautaro Gabriel Coteja - A01571214
-Carlos Rogelio Villarreal Treviño - A00832489
+Fernando Bustos Monsiváis - A00829931 
+Rodolfo Charles Wah - A01383393 
+Lautaro Gabriel Coteja - A01571214 
+Carlos Rogelio Villarreal Treviño - A00832489 
 Marcelo Hernández Almada - A01194283
 
 Maestros: Dr. Luis Alberto Muñoz Ubando y Dr. Raúl Valente Ramírez Velarde
