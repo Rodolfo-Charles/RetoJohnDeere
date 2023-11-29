@@ -12,11 +12,11 @@ field = np.full((environmentRows, environmentColumns), 1)
 
 q_values = np.zeros((environmentRows, environmentColumns, 4))
 
-fieldAgent = Field(field, 10, 10)
+fieldAgent = Field(field, environmentRows, environmentColumns)
 actions = ['up', 'right', 'down', 'left']
 
 indicesToChange = fieldAgent.getIndicesToChange(4)
-fieldAgent.createObstacles(indicesToChange)
+field = fieldAgent.createObstacles(indicesToChange)
 
 for row in field:
   print(row)
@@ -28,19 +28,20 @@ learning_rate = 0.9 #the rate at which the AI agent should learn
 dic = {}
 #run through 1000 training episodes
 
-for episode in range(1000):
+for episode in range(10000):
     #refresh field
     field = np.full((environmentRows, environmentColumns), 1)
-    fieldAgent = Field(field, 10, 10)
+    fieldAgent = Field(field, environmentRows, environmentColumns)
     field = fieldAgent.createObstacles(indicesToChange)
 
     #refresh agents
     container = Container(field)
     tractor = Tractor(container, field)
     harvesterAgent = Harvester(field, q_values)
+    fieldAgent = Field(field, environmentRows, environmentColumns)
 
     #get the starting location for this episode
-    row_index, column_index = 0, 0
+    row_index, column_index = 1, 1
     episodeDic = {}
 
     #continue taking actions (i.e., moving) until we reach a terminal state
@@ -63,7 +64,7 @@ for episode in range(1000):
             harvesterAgent.harvest()
             tractor.loadContainer(1)
         if fieldAgent.isEmpty(): 
-            reward = 10000000000000
+            reward = 100
             success = True
 
         old_q_value = q_values[old_row_index, old_column_index, action_index]
@@ -81,12 +82,12 @@ for episode in range(1000):
                     "containerLoad": tractor.container.load,
                     "field": [row[:] for row in field.tolist()],
                 }
-    
+        
     dic[f"episode{episode}"] = {
         "steps": episodeDic,
         "success": success
         }
 print('Training complete!')
 
-with open("Final1000Episodes.json", "w") as outfile: 
+with open("100reward1000episodesFieldEncapsulated.json", "w") as outfile: 
     json.dump(dic, outfile)

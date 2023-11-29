@@ -29,6 +29,11 @@ class Field(ap.Agent):
         # Change the values at the selected indices to -100
         for row, col in indices_to_change:
             self.field[row][col] = -100
+
+        for i in range(len(self.field)):
+            for j in range(len(self.field[i])):
+                if i == 0 or i == len(self.field) - 1 or j == 0 or j == len(self.field[i]) - 1:
+                    self.field[i][j] = -100
         return self.field
 
 

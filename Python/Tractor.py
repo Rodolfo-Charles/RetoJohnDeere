@@ -3,7 +3,7 @@ class Tractor(ap.Agent):
     def __init__(self, container, field):
         self.field = field
         self.container = container
-        self.position = [0, 0]
+        self.position = [1, 1]
         self.rows = len(field)
         self.cols = len(field[0])
 

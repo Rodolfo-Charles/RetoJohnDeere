@@ -3,7 +3,7 @@ import numpy as np
 class Harvester(ap.Agent):
 	def __init__(self, field, q_values):
 		self.field = field
-		self.position = [0, 0]
+		self.position = [1, 1]
 		self.rows = len(field)
 		self.cols = len(field[0])
 		self.actions = ['up', 'right', 'down', 'left']
