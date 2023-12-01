@@ -1,0 +1,14 @@
+newmtl Maiz
+Kd 0.9568627 1 0.08627451
+d 1
+
+newmtl FarmGround
+map_Kd ground-seamless-texture-game-ui-for-the-game-farm-brown-background-of-cultivated-land-vector.jpg
+map_Ke ground-seamless-texture-game-ui-for-the-game-farm-brown-background-of-cultivated-land-vector.jpg
+Kd 0.7075472 0.3507966 0.1568619
+d 1
+
+newmtl Tallo
+Kd 0.02723388 0.6415094 0.1296132
+d 1
+

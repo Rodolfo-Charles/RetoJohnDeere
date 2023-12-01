@@ -1,0 +1,4 @@
+repository "pruebasProbuilder@Fito7978@cloud"
+  path "/"
+    br "/main"
+    co "/main"

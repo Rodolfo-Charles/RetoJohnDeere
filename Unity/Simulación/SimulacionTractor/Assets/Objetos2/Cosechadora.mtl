@@ -1,0 +1,20 @@
+newmtl Gris_JD
+Kd 0.2830189 0.2816839 0.2816839
+d 1
+
+newmtl Verde_JD
+Kd 0.2688679 1 0.2891051
+d 1
+
+newmtl Negro_JD
+Kd 0.03773582 0.03773582 0.03773582
+d 1
+
+newmtl Amarillo_JD
+Kd 1 0.9073274 0.2028302
+d 1
+
+newmtl NA
+Kd 0 0 0
+d 0.6117647
+
