@@ -12,3 +12,4 @@ Marcelo Hernández Almada - A01194283 <br>
 Maestros: Dr. Luis Alberto Muñoz Ubando y Dr. Raúl Valente Ramírez Velarde
 
 Enlace a nuestro video en YouTube para ver nuestra primera simulación 3D de la solución al reto: https://youtu.be/l7BmZsZoSyY?si=U3uKD47jfvc9veRI
+Enlace a nuestro video en YouTube para ver nuestra simulación 3D final de la solución al reto: https://youtu.be/cNP7qhQ1XkE?si=KPTVUvbqZzMKNQbA
